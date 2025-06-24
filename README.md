@@ -2,6 +2,8 @@
 
 A modern, interactive drag-and-drop canvas application built with React Flow, featuring draggable blocks, connection management, and context menus.
 
+[preview](./public/images/preview.png)
+
 ## 🎯 Features
 
 - **Drag & Drop Interface**: Intuitive block placement from sidebar to canvas
@@ -80,28 +82,12 @@ The app uses Tailwind CSS for styling. You can customize:
 
 ## 🚀 Deployment
 
-### GitHub Pages
-
-```bash
-npm run deploy
-```
-
 ### Vercel
 
 ```bash
 npx vercel
 ```
 
-### Netlify
+## License and Credits
 
-1. Build: `npm run build`
-2. Deploy the `build` folder
-
-## 🔮 Future Enhancements
-
-- [ ] Save/Load canvas state
-- [ ] Undo/Redo functionality
-- [ ] More block types and shapes
-- [ ] Custom styling options
-- [ ] Export canvas as image
-- [ ] Collaborative editing
+- Aakash Rajbhar
