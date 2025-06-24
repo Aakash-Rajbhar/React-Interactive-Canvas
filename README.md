@@ -95,14 +95,6 @@ The app uses Tailwind CSS for styling. You can customize:
 - Block appearance in the `CustomBlock` component
 - Canvas styling in the main ReactFlow component
 
-## 🚀 Deployment
-
-### Vercel
-
-```bash
-npx vercel
-```
-
 ## License and Credits
 
 - Aakash Rajbhar
