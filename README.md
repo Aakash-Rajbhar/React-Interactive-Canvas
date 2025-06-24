@@ -2,7 +2,7 @@
 
 A modern, interactive drag-and-drop canvas application built with React Flow, featuring draggable blocks, connection management, and context menus.
 
-[preview](./public/images/preview.png)
+[preview](/images/preview.png)
 
 ## 🎯 Features
 
