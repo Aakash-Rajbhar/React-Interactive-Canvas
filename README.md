@@ -60,6 +60,12 @@ A modern, interactive drag-and-drop canvas application built with React Flow, fe
 
 ```
 src/
+├── components
+├    ├────CustomBlock.jsx
+├    ├────CustomEdge.jsx
+├    ├────DndFlow.jsx
+├    ├────ErrorNotification.jsx
+├    ├────SuccessNotification.jsx
 ├── App.js          # Main application component
 ├── index.js        # React entry point
 ├── index.css       # Global styles and Tailwind imports
