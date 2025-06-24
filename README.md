@@ -23,6 +23,15 @@ A modern, interactive drag-and-drop canvas application built with React Flow, fe
 ### Installation
 
 1. Clone or download the project
+
+   ```bash
+   git clone https://github.com/Aakash-Rajbhar/React-Interactive-Canvas.git
+   ```
+
+   ```bash
+   cd React-Interactive-Canvas
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
