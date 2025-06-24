@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# React Flow Interactive Canvas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive drag-and-drop canvas application built with React Flow, featuring draggable blocks, connection management, and context menus.
 
-## Available Scripts
+## 🎯 Features
 
-In the project directory, you can run:
+- **Drag & Drop Interface**: Intuitive block placement from sidebar to canvas
+- **Connection Management**: Smart connection system (Block A → Block B only)
+- **Context Menus**: Right-click blocks to access "Hello World" context menu
+- **Visual Feedback**: Color-coded blocks and connection states
+- **Responsive Design**: Works seamlessly across different screen sizes
+- **Modern UI**: Clean, professional interface with Tailwind CSS
 
-### `npm start`
+## 🚀 Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone or download the project
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### `npm run build`
+## 📦 Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React 18** - UI library
+- **React Flow** - Interactive node-based interfaces
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Hooks** - Modern React patterns
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎮 How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Drag Blocks**: Drag "Block A" (green) or "Block B" (yellow) from the sidebar to the canvas
+2. **Create Connections**: Click and drag from Block A to Block B to create connections
+3. **Context Menu**: Right-click any block to see the "Hello World" context menu
+4. **Navigate**: Use mouse wheel to zoom, click and drag to pan around the canvas
 
-### `npm run eject`
+## 🏗️ Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── App.js          # Main application component
+├── index.js        # React entry point
+├── index.css       # Global styles and Tailwind imports
+└── ...
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Available Scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `npm start` - Runs the app in development mode
+- `npm build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run deploy` - Deploys to GitHub Pages (if configured)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎨 Customization
 
-## Learn More
+### Adding New Block Types
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Add new block type to `blockTypes` array in App.js
+2. Update the styling in the `CustomBlock` component
+3. Modify connection logic in `onConnect` function if needed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Styling
 
-### Code Splitting
+The app uses Tailwind CSS for styling. You can customize:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Colors in `tailwind.config.js`
+- Block appearance in the `CustomBlock` component
+- Canvas styling in the main ReactFlow component
 
-### Analyzing the Bundle Size
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### GitHub Pages
 
-### Making a Progressive Web App
+```bash
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Vercel
 
-### Advanced Configuration
+```bash
+npx vercel
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Netlify
 
-### Deployment
+1. Build: `npm run build`
+2. Deploy the `build` folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔮 Future Enhancements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Save/Load canvas state
+- [ ] Undo/Redo functionality
+- [ ] More block types and shapes
+- [ ] Custom styling options
+- [ ] Export canvas as image
+- [ ] Collaborative editing
